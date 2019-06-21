@@ -34,6 +34,9 @@ export class SmurfForm extends React.Component {
                     <em>Height: </em>
                     <input ref={this.heightRef} type="number" />
                 </div>
+                <div>
+                    <button onClick={this.onAddNewSmurf}>Add Smurf</button>
+                </div>
 
             </div>
         )
