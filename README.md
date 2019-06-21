@@ -28,9 +28,13 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] What is the difference between Application state and Component state? When would be a good time to use one over the other?
 
-`Application state` is the global state that all components in the tree can access and the `component state` isi the state that is local to a single component and cannot be accessed outside this component
+`Application state` is the global state that all components in the tree can access and the `component state` isi the state that is local to a single component and cannot be accessed outside this component 
 
 - [ ] Describe `redux-thunk`, what does it allow us to do? How does it change our `action-creators`?
+
+`Redux-thunk` is a middleware that allows us to write action creators that return a function rather than an action. It can can be used to delay the dispatch of an action or to dispatch only if a certain condition is met. 
+
+
 
 ## Project Set Up
 
