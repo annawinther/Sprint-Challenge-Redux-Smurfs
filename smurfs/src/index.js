@@ -6,15 +6,15 @@ import thunk from 'redux-thunk';
 import logger from 'redux-logger';
 import { createStore, compose, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
-import smurfReducer from './reducers';
+import rootReducer from './reducers';
 
 const store = createStore(
-  smurfReducer,
-  // {},
-  // compose(
+  rootReducer,
+  {},
+  compose(
     applyMiddleware(thunk, logger),
-  //   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
-  // )
+    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
+  )
 );
 
 ReactDOM.render(
