@@ -1,11 +1,12 @@
 import React from 'react';
+import './Smurfs.css';
 
 const Smurf = props => {
     return (
-        <div> 
+        <div className="smurf-list"> 
             <h3>Name: {props.smurf.name}</h3>
             <h4>Age: {props.smurf.age}</h4>
-            <g4>Height {props.smurf.height}cm</g4>
+            <h4>Height {props.smurf.height}</h4>
         </div>
     )
 }
