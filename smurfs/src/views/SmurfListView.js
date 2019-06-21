@@ -40,7 +40,7 @@ export class SmurfListView extends React.Component {
 }
 
 const mapStateToProps = state => {
-    console.log('state', state);
+    // console.log('state', state);
     return {
         smurfs: state.smurfReducer.smurfs,
         fetchingSmurfs: state.smurfReducer.fetchingSmurfs,
