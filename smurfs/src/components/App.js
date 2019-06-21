@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import SmurfListView from '../views/SmurfListView';
+// import SmurfListView from '../views/SmurfListView';
+import Smurfs from './Smurfs';
 import './App.css';
 /*
  to wire this component up you're going to need a few things.
@@ -11,7 +12,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <SmurfListView />
+        <Smurfs />
       </div>
     );
   }

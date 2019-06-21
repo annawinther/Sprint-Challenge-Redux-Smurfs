@@ -23,7 +23,7 @@ const initialState =  {
   error: null,
 }
 
-const rootReducer = (state = initialState, action) => {
+const smurfReducer = (state = initialState, action) => {
   switch(action.type){
     case(types.FETCHING_SMURFS_START):
       return {...state, fetchingSmurfs: true };
@@ -50,4 +50,4 @@ const rootReducer = (state = initialState, action) => {
   Components can then read your store as, `state` and not `state.fooReducer`.
 */
 
-export default rootReducer;
+export default smurfReducer;
