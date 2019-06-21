@@ -27,14 +27,6 @@ export class SmurfListView extends React.Component {
 
         return(
             <div>
-                {/* {this.props.smurfs.map(smurf => {
-                    debugger;
-                    <div> 
-                        <h1>{smurf.name}</h1>
-                        <h1>{smurf.age}</h1>
-                        <h1>{smurf.height}</h1>
-                    </div>
-                })} */}
                 <SmurfList 
                     smurfs={this.props.smurfs}
                     fetchingSmurfs={this.props.fetchingSmurfs}
