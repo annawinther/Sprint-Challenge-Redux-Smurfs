@@ -25,7 +25,7 @@ const initialState =  {
 
 const rootReducer = (state = initialState, action) => {
   switch(action.type){
-    case(types.ADD_SMURFS_START):
+    case(types.FETCHING_SMURFS_START):
       return {...state, fetchingSmurfs: true };
     case (types.FETCHING_SMURFS_SUCCESS):
         return {...state, fetchingSmurfs: false, smurfs: action.payload };
@@ -49,6 +49,5 @@ const rootReducer = (state = initialState, action) => {
   There is no need for 'combineReducers' in this project.
   Components can then read your store as, `state` and not `state.fooReducer`.
 */
-
 
 export default rootReducer;

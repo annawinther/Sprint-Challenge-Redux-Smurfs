@@ -9,9 +9,9 @@ import { Provider } from 'react-redux';
 import rootReducer from './reducers';
 
 const store = createStore(
-  rootreducer,
+  rootReducer,
   {},
-  commpose(
+  compose(
     applyMiddleware(thunk, logger),
     window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
   )
