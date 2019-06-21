@@ -12,6 +12,10 @@ export const ADD_SMURFS_START = "ADD_SMURFS_START";
 export const ADD_SMURFS_SUCCESS = "ADD_SMURFS_SUCCESS";
 export const ADD_SMURFS_FAILURE = "ADD_SMURFS_FAILURE";
 
+// stretch fro deleting smurfs
+export const DELETING_SMURFS_START = "DELETING_SMURFS_START"
+export const DELETING_SMURFS_SUCCESS = "DELETING_SMURFS_SUCCESS"
+export const DELETING_SMURFS_FAILURE = "DELETING_SMURFS_FAILURE"
 
 export const getSmurfs = () => dispatch => {
   dispatch({ type: FETCHING_SMURFS_START });
@@ -36,6 +40,11 @@ export const addSmurf = (smurf) => dispatch => {
       dispatch({ type: ADD_SMURFS_FAILURE, payload: err })
     })
 }
+
+export const deletSmurf = (id) => dispatch => {
+  dispatch({})
+}
+
 /*
   For this project you'll need at least 2 action creators for the main portion,
    and 2 more for the stretch problem.

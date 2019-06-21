@@ -21,33 +21,29 @@ export class SmurfForm extends React.Component {
     render(){
         return (
             <div>
-                <h3> Add New Smurf To The Village! </h3>
-                <div>
-                    <em>Name: </em>
-                    <input ref={this.nameRef} type="text" />
-                </div>
-                <div>
-                    <em>Age: </em>
-                    <input ref={this.ageRef} type="number" />
-                </div>
-                <div>
-                    <em>Height: </em>
-                    <input ref={this.heightRef} type="number" />
-                </div>
-                <div>
-                    <button onClick={this.onAddNewSmurf}>Add Smurf</button>
-                </div>
+                <h3> ADD A NEW SMURF TO THE VILLAGE! </h3>
+                <form onSubmit={this.onAddNewSmurf}>
+                    <div>
+                        <em>Name: </em>
+                        <input ref={this.nameRef} type="text" />
+                    </div>
+                    <div>
+                        <em>Age: </em>
+                        <input ref={this.ageRef} type="number" />
+                    </div>
+                    <div>
+                        <em>Height: </em>
+                        <input ref={this.heightRef} type="number" />
+                    </div>
+                    <div>
+                        <button onClick={this.onAddNewSmurf}>Add Smurf</button>
+                    </div>
+                </form>
 
             </div>
         )
     }
 }
-
-// const mapStateToProps = state => {
-//     return (
-//         addSmurf: state
-//     )
-// }
 
 export default connect(
     null,
